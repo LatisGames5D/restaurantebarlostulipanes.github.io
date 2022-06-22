@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url("/fonts/coolvetica-crammed-rg.otf");
+}
+@font-face{
+    font-family: Brutel-ExtraBold;
+    src: url("/fonts/Brutel-ExtraBold.otf");
+}
+@font-face {
+    font-family: MusticaPro-SemiBold;
+    src: url("/fonts/MusticaPro-SemiBold.otf");
+}
+@font-face {
+    font-family: Louis-George-Cafe-Italic;
+    src: url("/fonts/Louis-George-Cafe-Italic.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Cabecera*/
+header{
+    width:100%;
+    height:80px;
+    background: #fb6f92;
+}
+.container-header{
+    width:100%;
+    max-width:1200px;
+    position:relative;
+    margin:auto;
+}
+.logo-title{
+    display: flex;
+}
+.logo-title img{
+    width:60px;
+    height:60px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.logo-title h4{
+    color:white;
+    font-family: Coolvetica;
+    font-weight:100;
+    margin-left:10px;
+    margin-top:0px;
+    font-size: 65px;
+}
+.icon-menu{
+    cursor: pointer;
+    position:absolute;
+    right:10px;
+    top:2px;
+}
+/*Menu lateral*/
+#menuTitle{
+    color: white;
+    margin-top: 28px;
+    margin-left:auto;
+    width: 15%;
+    max-width: 1000px;
+    font-family: MusticaPro-SemiBold;
+    font-size: 20px;
+}
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    font-family: MusticaPro-SemiBold;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width:100%;
+    height: 100vh;
+    margin:auto;
+    background: rgba(236,90,183,0.5);
+    position: fixed;
+    transition: all 500ms ease;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding:10px;
+    margin: 30px 400px 40px 400px;
+    color:#f1faee;
+    border-bottom: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-bottom: 5px solid #d9d9d9;
+    background: #ff758f;
+}
+.container-menu label{
+    position: absolute;
+    right: 5px;
+    top:10px;
+    cursor: pointer;
+}
+.container-menu img{
+    width: 30px;
+    height: 30px;
+}
+/*Front Page - Portada*/
+.container-frontPage{
+    width: 100%;
+    height:400px;
+    position: relative;
+    background-image:url("/image/portadaMariscos.jpg");
+    background-size: cover;
+    animation:movement 10s infinite linear alternate;
+}
+/*Animación de la imagen de fondo*/
+@keyframes movement{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+/*gradiente que tiene la imagen en movimiento*/
+.gradientLayer{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left,black,rgb(92, 92, 144));
+    opacity: 0.5;
+}
+/*Configuración de la tipografia, color y tamaño de los elementos que se muestran sobre la imagen*/
+.container-details{
+    width:100%;
+    max-width:1200px;
+    position:relative;
+    margin:auto;
+}
+.details{
+    width: 100%;
+    max-width: 500px;
+    position:relative;
+    top:80px;
+    left:5px;
+    color:white;
+    font-family: Brutel-ExtraBold;
+    font-size: 25px;
+}
+/*Articulos*/
+main{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.article-space{
+    width:100%;
+    max-width:350px;
+    margin:20px;
+    display:inline-block;
+    text-align: center;
+}
+.article-space h2{
+    font-family: MusticaPro-SemiBold;
+}
+.article-space p{
+    font-family: Louis-George-Cafe-Italic;
+}
+.article-space a{
+    font-family: Louis-George-Cafe-Italic;
+    text-decoration: none;
+}
+/*Posición de cada articulo*/
+#article1{
+    position: relative;
+    top:10px;
+}
+#article2{
+    position: relative;
+    top:25px;
+}
+#article3{
+    position: relative;
+    top:14px;
+}
+/*Degradado del pie de página*/
+#degraded{
+    position: relative;
+    top: 100px;
+    height: 49px;
+    background: rgb(58, 88, 136);
+}
+/*Cambio de posición de los articulos al disminuir el tamaño de la pantalla (responsive)*/
+/*Primer cambio de posición de elementos*/
+@media screen and (max-width:1178px){
+    .article-space{
+        max-width: 300px;
+    }
+    #article1{
+        position: relative;
+        top:0px;
+    }
+    #article2{
+        position: relative;
+        top:11px;
+    }
+}
+/*Segundo cambio de posición de elementos*/
+@media screen and (max-width:1039px){
+    .article-space{
+        max-width: 200px;
+        margin-left: 20px;
+    }
+    #article3{
+        position: relative;
+        top:0px;
+    }
+    #menuTitle{
+        width: 17%;
+    }
+}
+@media screen and (max-width:704px){
+    #menuTitle{
+        display: none;
+    }
+}
+/*Tercer cambio de posición de elementos*/
+@media screen and (max-width:728px){
+    .article-space{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .cont-menu nav a{
+        margin:auto;
+    }
+}

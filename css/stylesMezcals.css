@@ -1,0 +1,42 @@
+body{
+    background-image: url("/image/mezcalsFund.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+.pagina-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid red;
+}
+
+.producto{
+    font-family: MusticaPro-SemiBold;
+    margin-right: 70px;
+    background-color: white;
+    margin-left: 70px;
+    padding: 2px 16px;
+}
+
+.producto img{
+    width: 150px;
+}
+
+.producto:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.inicio{
+    font-family: MusticaPro-SemiBold;
+    text-align: center;
+}
+
+@media screen and (max-width:805px){
+    .inicio{
+        color: white;
+    }
+}

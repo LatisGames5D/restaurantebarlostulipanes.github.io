@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/stylesForm.css"/>
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+        <div class="container-header">
+            <div class="logo-title">
+                <a href="/index.html"><img src="/image/logotipo-modified.png" alt="Logo Los Tulipanes"/></a>
+                <h4>Restaurante Bar Los Tulipanes</h4>
+                <h2 id="menuTitle">MENU</h2>
+                <label for="btn-menu"><img class="icon-menu" src="/icon/menu.png" /></label>
+            </div>
+        </div>
+    </header>
+    <!--Menu desplegable a traves de la cabecera-->
+    <input type="checkbox" id="btn-menu"/>
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="/index.html">Inicio</a>
+          <a href="/fotosLugar.html">Fotos del lugar</a>
+          <a href="/MenuSeaFood.html">Mariscos</a>
+          <a href="/meatMenu.html">Carnes</a>
+          <a href="/berages.html">Bebidas</a>
+          <a href="/mezcals.html">Mezcales</a>
+          <a href="/form.html">Realizar una reservación</a>
+        </nav>
+        <label for="btn-menu"><img src="/icon/x.png"/></label>
+      </div>
+    </div>
+    <form method="post">
+        <section class="formulario">
+            <center><h3>RESERVACIÓN</h3></center>
+            <input class="control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input class="control" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            <input class="control" type="text" name="personas" id="personas" placeholder="Numero de personas">
+            <input class="control" type="text" name="fecha" id="fecha" placeholder="Fecha">
+            <input class="control" type="text" name="hora" id="hora" placeholder="Hora">
+            <p>Después de enviar su reservación a nuestro correo, se le contestará por el mismo medio para confirmar su validación.</p>
+            <input class="boton" id="enviarCorreo" type="submit" value="Enviar">
+        </section>
+    </form>
+
+    <script>
+        const btnEnvio = document.getElementById("enviarCorreo");
+
+        btnEnvio.addEventListener('click',function(e){
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const apellidos = document.getElementById('apellidos').value;
+            const personas = document.getElementById('personas').value;
+            const fecha = document.getElementById('fecha').value;
+            const hora = document.getElementById('hora').value;
+            
+
+            window.location.href=`mailto:glt51064@gmail.com?subject=RESERVACIÓN&body=Nombre%3A${nombre}%0AApellidos%3A${apellidos}%0APersonas%3A${personas}%0AFecha%3A${fecha}%0AHora%3A${hora}`;
+        });
+    </script>
+</body>
+</html>
+

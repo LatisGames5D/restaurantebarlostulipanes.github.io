@@ -1,0 +1,357 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Fascinate', cursive;
+}
+body{
+	background: url('/image/drinks-vector-seamless-pattern-alcohol-3653233.jpg');
+}
+.contenedor{
+	width: 90%;
+	height: 10400px;
+	margin: auto;
+	
+}
+
+.ei h2{
+	background: #fff;
+	text-align: center;
+	margin: 20px;
+}
+.q{
+	margin: 20px;
+}
+.carta1{
+	color: #7CCFCC;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/p5.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta1 h4, .carta1 p{
+	font-size: 30px;
+}
+.carta2{
+	color: white;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/p1.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta2 h4, .carta2 p{
+	font-size: 30px;
+}
+.carta3{
+	color: white;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/p1.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta3 h4, .carta3 p{
+	font-size: 30px;
+}
+
+.carta3{
+	color: black;
+	width: 50%;
+	height: 200px;
+	margin: auto;
+	background: url('/image/p2.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta3 h4, .carta3 p{
+	font-size: 30px;
+}
+
+.carta4{
+	color: black;
+	width: 50%;
+	height: 200px;
+	margin: auto;
+	background: url('/image/p3.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta4 h4, .carta4 p{
+	font-size: 30px;
+}
+.carta5{
+	color: black;
+	width: 50%;
+	height: 350px;
+	margin: auto;
+	background: url('/image/p6.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta5 h4, .carta5 p{
+	font-size: 30px;
+}
+
+.carta6{
+	color: white;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/p4.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta6 h4, .carta6 p{
+	font-size: 30px;
+}
+.carta7{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/AGUA.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta7 h4, .carta7 p{
+	font-size: 30px;
+}
+.carta8{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/fresca.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta8 h4, .carta8 p{
+	font-size: 30px;
+}
+.carta9{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/fanta.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta9 h4, .carta9 p{
+	font-size: 30px;
+}
+.carta10{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/sprite.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta10 h4, .carta10 p{
+	font-size: 30px;
+}
+.carta11{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/peñafielmineral.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta11 h4, .carta11 p{
+	font-size: 30px;
+}
+.carta12{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/cocacola.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta12 h4, .carta12 p{
+	font-size: 30px;
+}
+.carta13{
+	color: #ff5400;
+	width: 50%;
+	height: 400px;
+	margin: auto;
+	background: url('/image/ultras.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta13 h4, .carta13 p{
+	font-size: 30px;
+}
+.carta14{
+	color: #fff;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/pacifico.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta14 h4, .carta14 p{
+	font-size: 30px;
+}
+.carta15{
+	color: white;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/familiares.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta15 h4, .carta15 p{
+	font-size: 30px;
+}
+.carta16{
+	color: white;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/coronitas.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta16 h4, .carta16 p{
+	font-size: 30px;
+}
+.carta17{
+	color: black;
+	width: 50%;
+	height: 250px;
+	margin: auto;
+	background: url('/image/especial.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta17 h4{
+	font-size: 30px;
+}
+
+.carta17 p{
+	font-size: 30px;
+	color: darkblue;
+}
+.carta18{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/modelo.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta18 h4, .carta18 p{
+	font-size: 30px;
+}
+.carta19{
+	color: black;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/modelo_night.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta19 p{
+	font-size: 30px;
+}
+.carta19 h4 {
+	font-size: 30px;
+	color: white;
+}
+.carta20{
+	color: white;
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	background: url('/image/familiares.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.carta20 h4, .carta20 p{
+	font-size: 30px;
+}
+.qs{
+	background: #fff;
+	width: 90%;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+}
